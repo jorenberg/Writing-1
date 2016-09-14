@@ -12,3 +12,5 @@ I have dedicated my entire professional and personal orientation toward developi
 It is my personal choice not to have any single goal or idol, because I believe that once you reach your goal and surpass it you will start to stagnate; instead I have a direction in which I am developing my talent hoping it — <i>will always bring unique and measurable results for the mankind.<i/>
 
 I'm utilising my full force of thought-provoking formidable mind with moral and ethical sense to answer — <i>"How specific questions must be analysed in terms of best possible solutions that brings upliftment of not merely in science and technology, but for the whole human civilisation?".</i>
+
+Enjoy the mother — <b>Earth</b>,<br/><br/>Thanks.
