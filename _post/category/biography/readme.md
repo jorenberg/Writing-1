@@ -8,3 +8,5 @@ I'm not only scientist, mathematician, engineer, design thinker and core innovat
 I'm also are very passionate about invention and innovation through Research and Discovery activity. I have involvement mainly in Algorithms, Data Science, Machine Learning, NLP, Predictive Analytics, Data Visualisation, Scientific Computing, as well as in Information & Technical Architecture, providing best software solutions through commitments.
 
 I have dedicated my entire professional and personal orientation toward developing myself into not only being the best possible “scientist” I can be, but being one step ahead of the curve at all times.
+
+It is my personal choice not to have any single goal or idol, because I believe that once you reach your goal and surpass it you will start to stagnate; instead I have a direction in which I am developing my talent hoping it — <i>will always bring unique and measurable results for the mankind.<i/>
