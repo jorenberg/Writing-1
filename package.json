@@ -1,0 +1,35 @@
+{
+  "name": "writing",
+  "title": "Writing - Everest- WordPress Theme Library.",
+  "description": "Everest theme library for WordPress.",
+  "version": "0.0.1",
+  "homepage": "http://prabhatkumar.org/",
+  "private": true,
+  "author": [
+    {
+      "name": "Prabhat Kumar",
+      "email": "prabhat.genome@gmail.com",
+      "url": "http://prabhatkumar.org/"
+    },
+    {
+      "name": "Anupama",
+      "email": "anupama.senior@gmail.com",
+      "url": "https://github.com/iamanupama"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-phantomcss": "git://github.com/anselmh/grunt-phantomcss.git",
+    "matchdep": "latest",
+    "phantomjs": "latest",
+    "time-grunt": "latest"
+  },
+  "keywords": [
+    "Prabhat",
+    "Kumar",
+    "CEO",
+    "Founder",
+    "Data Scientist",
+    "Sequomics Corporation"
+  ]
+}
