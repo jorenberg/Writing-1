@@ -117,3 +117,269 @@ $visibilityDefault:   hidden !default;
     @content;
   }
 }
+
+// Attention Seekers
+// for Bounce:
+@include keyframes(bounce) {
+  0%, 20%, 50%, 80%, 100% {
+    @include transform(translateY(0));
+  }
+  40% {
+    @include transform(translateY(-30px));
+  }
+  60% {
+    @include transform(translateY(-15px));
+  }
+}
+
+@mixin bounce($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(bounce);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Flash:
+@include keyframes(flash) {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@mixin flash($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(flash);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Jello:
+// originally authored by Nick Pettit - https://github.com/nickpettit/glide
+@include keyframes(jello) {
+  11.1% {
+    @include transform(none);
+  }
+  22.2% {
+    @include transform(skewX(-12.5deg) skewY(-12.5deg));
+  }
+  33.3% {
+    @include transform(skewX(6.25deg) skewY(6.25deg));
+  }
+  44.4% {
+    @include transform(skewX(-3.125deg) skewY(-3.125deg));
+  }
+  55.5% {
+    @include transform(skewX(1.5625deg) skewY(1.5625deg));
+  }
+  66.6% {
+    @include transform(skewX(-0.78125deg) skewY(-0.78125deg));
+  }
+  77.7% {
+    @include transform(skewX(0.390625deg) skewY(0.390625deg));
+  }
+  88.8% {
+    @include transform(skewX(-0.1953125deg) skewY(-0.1953125deg));
+  }
+  100% {
+    @include transform(none);
+  }
+}
+
+@mixin jello($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(jello);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Pulse:
+// originally authored by Nick Pettit - https://github.com/nickpettit/glide
+@include keyframes(pulse) {
+  0% {
+    @include transform(scale(1));
+  }
+  50% {
+    @include transform(scale(1.1));
+  }
+  100% {
+    @include transform(scale(1));
+  }
+}
+
+@mixin pulse($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(pulse);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Rubber Band:
+@include keyframes(rubberBand) {
+  0% {
+    @include transform(scale3d(1, 1, 1));
+  }
+  30% {
+    @include transform(scale3d(1.25, 0.75, 1));
+  }
+  40% {
+    @include transform(scale3d(0.75, 1.25, 1));
+  }
+  50% {
+    @include transform(scale3d(1.15, 0.85, 1));
+  }
+  65% {
+    @include transform(scale3d(.95, 1.05, 1));
+  }
+  75% {
+    @include transform(scale3d(1.05, .95, 1));
+  }
+  100% {
+    @include transform(scale3d(1, 1, 1));
+  }
+}
+
+@mixin rubberBand($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(rubberBand);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Shake:
+@include keyframes(shake) {
+  0%, 100% {
+    @include transform(translateX(0));
+  }
+  10%, 30%, 50%, 70%, 90% {
+    @include transform(translateX(-10px));
+  }
+  20%, 40%, 60%, 80% {
+    @include transform(translateX(10px));
+  }
+}
+
+@mixin shake($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(shake);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Swing:
+@include keyframes(swing) {
+  20%, 40%, 60%, 80%, 100% {
+    @include transform-origin(top center);
+  }
+  20% {
+    @include transform(rotate(15deg));
+  }
+  40% {
+    @include transform(rotate(-10deg));
+  }
+  60% {
+    @include transform(rotate(5deg));
+  }
+  80% {
+    @include transform(rotate(-5deg));
+  }
+  100% {
+    @include transform(rotate(0deg));
+  }
+}
+
+@mixin swing($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include transform-origin(top center);
+  @include animation-name(swing);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Tada:
+@include keyframes(tada) {
+  0% {
+    @include transform(scale(1));
+  }
+  10%, 20% {
+    @include transform(scale(0.9) rotate(-3deg));
+  }
+  30%, 50%, 70%, 90% {
+    @include transform(scale(1.1) rotate(3deg));
+  }
+  40%, 60%, 80% {
+    @include transform(scale(1.1) rotate(-3deg));
+  }
+  100% {
+    @include transform(scale(1) rotate(0));
+  }
+}
+
+@mixin tada($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(tada);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Wobble:
+// originally authored by Nick Pettit - https://github.com/nickpettit/glide
+@include keyframes(wobble) {
+  0% {
+    @include transform(translateX(0%));
+  }
+  15% {
+    @include transform(translateX(-25%) rotate(-5deg));
+  }
+  30% {
+    @include transform(translateX(20%) rotate(3deg));
+  }
+  45% {
+    @include transform(translateX(-15%) rotate(-3deg));
+  }
+  60% {
+    @include transform(translateX(10%) rotate(2deg));
+  }
+  75% {
+    @include transform(translateX(-5%) rotate(-1deg));
+  }
+  100% {
+    @include transform(translateX(0%));
+  }
+}
+
+@mixin wobble($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(wobble);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
