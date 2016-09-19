@@ -383,3 +383,144 @@ $visibilityDefault:   hidden !default;
   @include fill-mode($fill);
   @include visibility($visibility);
 }
+
+// Bouncing Entrances
+// for Bounce In:
+@include keyframes(bounceIn) {
+  0% {
+    opacity: 0;
+    @include transform(scale(.3));
+  }
+  50% {
+    opacity: 1;
+    @include transform(scale(1.05));
+  }
+  70% {
+    @include transform(scale(.9));
+  }
+  100% {
+    @include transform(scale(1));
+  }
+}
+
+@mixin bounceIn($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(bounceIn);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Bounce In Down:
+@include keyframes(bounceInDown) {
+  0% {
+    opacity: 0;
+    @include transform(translateY(-2000px));
+  }
+  60% {
+    opacity: 1;
+    @include transform(translateY(30px));
+  }
+  80% {
+    @include transform(translateY(-10px));
+  }
+  100% {
+    @include transform(translateY(0));
+  }
+}
+
+@mixin bounceInDown($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(bounceInDown);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Bounce In Left:
+@include keyframes(bounceInLeft) {
+  0% {
+    opacity: 0;
+    @include transform(translateX(-2000px));
+  }
+  60% {
+    opacity: 1;
+    @include transform(translateX(30px));
+  }
+  80% {
+    @include transform(translateX(-10px));
+  }
+  100% {
+    @include transform(translateX(0));
+  }
+}
+
+@mixin bounceInLeft($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(bounceInLeft);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Bounce In Right:
+@include keyframes(bounceInRight) {
+  0% {
+    opacity: 0;
+    @include transform(translateX(2000px));
+  }
+  60% {
+    opacity: 1;
+    @include transform(translateX(-30px));
+  }
+  80% {
+    @include transform(translateX(10px));
+  }
+  100% {
+    @include transform(translateX(0));
+  }
+}
+
+@mixin bounceInRight($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(bounceInRight);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Bounce In Up:
+@include keyframes(bounceInUp) {
+  0% {
+    opacity: 0;
+    @include transform(translateY(2000px));
+  }
+  60% {
+    opacity: 1;
+    @include transform(translateY(-30px));
+  }
+  80% {
+    @include transform(translateY(10px));
+  }
+  100% {
+    @include transform(translateY(0));
+  }
+}
+
+@mixin bounceInUp($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(bounceInUp);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
