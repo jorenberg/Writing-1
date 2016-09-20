@@ -524,3 +524,132 @@ $visibilityDefault:   hidden !default;
   @include fill-mode($fill);
   @include visibility($visibility);
 }
+
+// Bouncing Exits
+// for Bounce Out:
+@include keyframes(bounceOut) {
+  0% {
+    @include transform(scale(1));
+  }
+  25% {
+    @include transform(scale(.95));
+  }
+  50% {
+    opacity: 1;
+    @include transform(scale(1.1));
+  }
+  100% {
+    opacity: 0;
+    @include transform(scale(.3));
+  }
+}
+
+@mixin bounceOut($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(bounceOut);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Bounce Out Down:
+@include keyframes(bounceOutDown) {
+  0% {
+    @include transform(translateY(0));
+  }
+  20% {
+    opacity: 1;
+    @include transform(translateY(-20px));
+  }
+  100% {
+    opacity: 0; 
+    @include transform(translateY(2000px));
+  }
+}
+
+@mixin bounceOutDown($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(bounceOutDown);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Bounce Out Left:
+@include keyframes(bounceOutLeft) {
+    0% {
+      @include transform(translateX(0));
+    }
+   20% {
+     opacity: 1;
+     @include transform(translateX(20px));
+    }
+  100% {
+    opacity: 0;
+    @include transform(translateX(-2000px));
+  }
+}
+
+@mixin bounceOutLeft($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(bounceOutLeft);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Bounce Out Right:
+@include keyframes(bounceOutRight) {
+    0% {
+      @include transform(translateX(0));
+    }
+   20% {
+     opacity: 1;
+     @include transform(translateX(-20px));
+    }
+  100% {
+    opacity: 0;
+    @include transform(translateX(2000px));
+  }
+}
+
+@mixin bounceOutRight($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(bounceOutRight);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Bounce Out Up:
+@include keyframes(bounceOutUp) {
+  0% {
+    @include transform(translateY(0));
+  }
+  20% {
+    opacity: 1;
+    @include transform(translateY(20px));
+  }
+  100% {
+    opacity: 0;
+    @include transform(translateY(-2000px));
+  }
+}
+
+@mixin bounceOutUp($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(bounceOutUp);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
