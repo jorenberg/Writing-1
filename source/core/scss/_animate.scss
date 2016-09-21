@@ -850,3 +850,46 @@ $visibilityDefault:   hidden !default;
   @include fill-mode($fill);
   @include visibility($visibility);
 }
+
+// Fading Exits
+// for Fade Out:
+@include keyframes(fadeOut) {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@mixin fadeOut($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(fadeOut);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+// for Fade Out Down:
+@include keyframes(fadeOutDown) {
+  0% {
+    opacity: 1;
+    @include transform(translateY(0));
+  }
+  100% {
+    opacity: 0;
+    @include transform(translateY(20px));
+  }
+}
+
+@mixin fadeOutDown($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(fadeOutDown);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
